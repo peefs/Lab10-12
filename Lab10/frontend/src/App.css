@@ -1,0 +1,94 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 100vmin;
+  pointer-events: none;
+}
+
+
+.App-header {
+  background-image: url('https://readdy.ai/api/search-image?query=A%20breathtaking%20view%20of%20a%20majestic%20waterfall%20cascading%20down%20from%20a%20rocky%20cliff%2C%20surrounded%20by%20lush%20green%20moss%20and%20vegetation.%20The%20scene%20is%20captured%20from%20inside%20a%20cave%2C%20framing%20the%20waterfall%20with%20the%20dark%20rocky%20cave%20entrance.%20The%20sky%20is%20bright%20blue%20with%20wispy%20clouds%2C%20creating%20a%20serene%20and%20peaceful%20atmosphere.&width=1920&height=1080&seq=12345&orientation=landscape'); /* Updated background URL */
+  background-size: cover; /* Ensure the background covers the entire area */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent background repetition */
+  display: flex;
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+  min-height: 100vh; /* Ensure it fills the viewport height */
+  width: 100%; /* Ensure it fills the viewport width */
+}
+
+.App-container {
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+  backdrop-filter: blur(10px); /* Add blur effect */
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  width: 100%;
+  max-width: 400px; /* Limit the width of the container */
+  text-align: center;
+  position: relative; /* Ensure proper positioning */
+}
+
+input, select, button {
+  margin: 12px 0;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #6B7280;
+  color: #ffffff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button:hover {
+  background-color: #4B5563;
+}
+
+button i {
+  margin-right: 8px; /* Add spacing between icon and text */
+}
+
+.success-message {
+  margin-top: 16px;
+  padding: 12px;
+  background-color: #d1fae5; /* Light green background */
+  border: 1px solid #10b981; /* Green border */
+  color: #065f46; /* Dark green text */
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.success-message i {
+  margin-right: 8px;
+}
+
+.no-students {
+  margin-top: 20px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.no-students i {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
